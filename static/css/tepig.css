@@ -1,0 +1,38 @@
+html {
+    width: 100%;
+    text-align: center;
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: lightyellow;
+}
+
+#actions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#actions button {
+    margin: 10px;
+    font-family: 'Comic Sans MS';
+}
+
+#tepigEnclosure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    height: 70%;
+    border: 2px tan solid;
+    background-color: lightgreen;
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.tepig img {
+    padding: 3px;
+}
+
+.tepig :hover {
+    cursor: grab
+}

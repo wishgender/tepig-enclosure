@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="./css/tepig.css">
+    </head>
+
+    <body>
+        <div id="info">
+            <h1>Welcome to the Tepig Enclosure!</h1>
+            <h2>Tepig count: <span id="tepigCount">1</span></h2>
+        </div>
+        <div id="actions">
+            <button id="addTepButton" onclick="addTepig()">Make more!</button>
+            <button id="sayHiButton" onclick="makeSounds()">Say hi!</button>
+            <button id="setFreeButton" onclick="setFree()">Set them free!</button>
+        </div>
+
+
+        <div id="tepigEnclosure">
+            <div class="tepig"><img src="./assets/menu.png" onmouseenter="startDancing(this)"
+                    onmouseleave="stopDancing(this)"></div>
+        </div>
+    </body>
+    <script src="./js/Tepig.js"></script>
+    <footer>Lazuli Rogers &copy; 2026</footer>
+
+</html>

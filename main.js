@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static("static"));
 
 app.get("/", (req, res) => {
-    res.type("html").send("index.html");
+    res.type("text/html").send("<html><body><h1>Hiya!</h1></body></html>");
 });
 
 app.listen(PORT, () => {

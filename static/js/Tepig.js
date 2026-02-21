@@ -2,9 +2,6 @@
 //= 02-20-2026 16:13
 //= Tepig.js
 
-//= Dependencies =//
-
-
 const tepigJump = [
     { transform: "translateY(-30px)" },
     { transform: "translateY(0px)" }
@@ -26,7 +23,7 @@ function addTepig() {
     let enclosure = document.getElementById(enclosureID);
     let newTep = document.createElement('div');
     let tepImage = document.createElement('img');
-    tepImage.src = './assets/menu.png';
+    tepImage.src = 'static/assets/menu.png';
     tepImage.setAttribute('onmouseenter', 'startDancing(this);');
     tepImage.setAttribute('onmouseleave', 'stopDancing(this);');
     newTep.classList.add('tepig');
@@ -39,7 +36,7 @@ function addTepig() {
 async function makeSounds() {
     let tepigs = document.getElementsByClassName('tepig');
     for (let tepig of tepigs) {
-        const cry = new Audio('./assets/tepig.ogg');
+        const cry = new Audio('static/assets/tepig.ogg');
         cry.play();
         tepig.animate(tepigJump, jumpTiming);
     }
@@ -55,9 +52,9 @@ function setFree() {
 }
 
 function startDancing(tep) {
-    tep.src = "./assets/menuAnim.png"
+    tep.src = "static/assets/menuAnim.png"
 }
 
 function stopDancing(tep) {
-    tep.src = "./assets/menu.png"
+    tep.src = "static/assets/menu.png"
 }
